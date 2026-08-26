@@ -15,5 +15,4 @@ public class StrengthSession extends TrainingSession{
         System.out.println("Starting strength session: " + getName() + ". Time to lift!");   
     }
     
-    
 }
