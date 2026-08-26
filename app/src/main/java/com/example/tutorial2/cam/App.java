@@ -116,7 +116,7 @@ public class App {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < sessions.size(); i++) {
             // toString() is called here — same call,different output depending on the actual object type.
-            sb.append("TrainingSession "+(i+1)).append(": ").append(sessions.get(i).toString()).append("\n");
+            sb.append("TrainingSession "+(i+1)).append(":       ").append(sessions.get(i).toString()).append("\n");
         }
  
         //display all sessions
@@ -135,7 +135,7 @@ public class App {
         //  Show the list of sessions
         StringBuilder sb = new StringBuilder("Select a session by index:\n");
         for (int i = 0; i < sessions.size(); i++) {
-            sb.append("TrainingSession "+i).append(": ").append(sessions.get(i).toString()).append("\n");
+            sb.append("TrainingSession "+i).append(":       ").append(sessions.get(i).toString()).append("\n");
         }
  
         //  get indexText input
@@ -163,9 +163,8 @@ public class App {
         }
         
         //the SAME call produces different output depending on whether the object is a YogaSession,CardioSession or StrengthSession. 
-        // startSession() prints to the console, since it's not GUI text.
+        // startSession() prints the appropriate message based on the type of session, calling the specific overriden version of TrainingSession's startSession()
         sessions.get(index).startSession();
-        JOptionPane.showMessageDialog(null, "Session started! Check the console for the message.");
 
     }
 }

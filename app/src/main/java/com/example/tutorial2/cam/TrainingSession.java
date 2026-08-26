@@ -52,6 +52,6 @@ public abstract class TrainingSession {
     //Overriden, non-abstract toString method that EVERY session type uses, UNLESS overridden (optional, if child class needs different version of the method)
     @Override
     public String toString() {
-        return "Session Name: " + name + " | Trainer Name: " + trainer + " | Duration: " + duration + " min";
+        return "Session Name: " + name + "      |    Trainer Name: " + trainer + "     |    Duration: " + duration + " min";
     }
 }

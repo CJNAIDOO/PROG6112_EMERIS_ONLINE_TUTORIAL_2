@@ -1,6 +1,10 @@
 package com.example.tutorial2.cam;
 
 
+//needed to use JOptionPane
+import javax.swing.JOptionPane;
+
+
 public class YogaSession extends TrainingSession {
 
     public YogaSession(String name, String trainer, int duration){
@@ -12,6 +16,6 @@ public class YogaSession extends TrainingSession {
     @Override
     public void startSession() {
         //display message for starting yoga session
-        System.out.println("Starting yoga session: " + getName() + ". Breathe in... breathe out...");    
+        JOptionPane.showMessageDialog(null, "Starting yoga session: " + getName() + ". Breathe in... breathe out...");    
     }
 }
