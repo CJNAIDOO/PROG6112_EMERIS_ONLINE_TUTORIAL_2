@@ -1,7 +1,7 @@
 package com.example.tutorial2.cam;
 
 
-public class TrainingSession {
+public abstract class TrainingSession {
     
     // Shared fields for every kind of session
     private String name;
